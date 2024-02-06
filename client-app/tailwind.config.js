@@ -5,6 +5,7 @@ export default {
     extend: {
       colors: {
         "dark-base": "#181818",
+        "off-white": "#dddddd"
       },
     },
   },
