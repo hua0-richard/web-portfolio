@@ -1,0 +1,31 @@
+services:
+  client:
+    build: ./client
+    ports:
+      - 5173:5173
+    environment:
+      CHOKIDAR_USEPOLLING: "true"
+    volumes:
+      - /client-app/node_modules
+      - ./client:/client-app
+
+  server:
+    build: ./server
+    ports:
+      - 8000:8000
+    volumes:
+      - "./server:/server-app"
+    environment:
+      - CONN_STR=mongodb://root:example@mongodb
+
+  mongodb:
+    image: "mongo"
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: example
+    volumes:
+      - db-data:/data
+    ports:
+      - 27017:27017
+volumes:
+  db-data:

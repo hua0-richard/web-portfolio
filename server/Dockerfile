@@ -1,0 +1,7 @@
+FROM python:3.9
+WORKDIR /server-app
+RUN pip3 install fastapi uvicorn
+RUN pip3 install pymongo
+COPY ./app /app
+EXPOSE 8000
+CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
