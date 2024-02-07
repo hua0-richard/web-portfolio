@@ -7,7 +7,13 @@ export default function Projects() {
         <div className="text-white text-4xl font-semibold">Projects</div>
         <ButtonRectangle icon="" label="View All" />
       </div>
-      <div className="my-[24px] w-full">
+
+      <div className="my-[24px] w-full space-y-4">
+        <div className="flex justify-around w-full">
+          <Card />
+          <Card />
+          <Card />
+        </div>
         <div className="flex justify-around w-full">
           <Card />
           <Card />
