@@ -1,16 +1,24 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import ButtonRectangle from "./ButtonRectangle";
 import ButtonRound from "./ButtonRound";
 
 export default function Menu() {
   const [darkMode, setDarkMode] = useState(localStorage.theme);
+
+  useEffect(() => {
+    handleDarkMode();
+  }, []);
+
   function handleDarkMode() {
-    if (localStorage.theme === "dark" || !("theme" in localStorage)) {
+    if (
+      localStorage.theme === "dark" ||
+      (!("theme" in localStorage) &&
+        window.matchMedia("(prefers-color-scheme: dark)").matches)
+    ) {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
     }
-
     if (localStorage.theme === "dark") {
       localStorage.theme = "light";
       setDarkMode(localStorage.theme);
@@ -18,7 +26,6 @@ export default function Menu() {
       localStorage.theme = "dark";
       setDarkMode(localStorage.theme);
     }
-    console.log("done");
   }
   return (
     <div className="w-[720px] py-[24px] flex justify-between items-center">
