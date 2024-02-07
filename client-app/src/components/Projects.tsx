@@ -9,12 +9,12 @@ export default function Projects() {
       </div>
 
       <div className="my-[24px] w-full space-y-4">
-        <div className="flex justify-around w-full">
+        <div className="flex justify-around w-full space-x-4">
           <Card />
           <Card />
           <Card />
         </div>
-        <div className="flex justify-around w-full">
+        <div className="flex justify-around w-full space-x-4">
           <Card />
           <Card />
           <Card />
