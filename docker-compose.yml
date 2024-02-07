@@ -1,13 +1,13 @@
 services:
   client:
-    build: ./client
+    build: ./client-app
     ports:
       - 5173:5173
     environment:
       CHOKIDAR_USEPOLLING: "true"
     volumes:
       - /client-app/node_modules
-      - ./client:/client-app
+      - ./client-app:/client-app
 
   server:
     build: ./server
