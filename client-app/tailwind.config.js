@@ -6,8 +6,8 @@ export default {
       colors: {
         "dark-base": "#181818",
         "dark-secondary": "#252525",
-        "dark-tertiary" : "#1f1f1f",
-        "dark-accent" : "#dd9933",
+        "dark-tertiary": "#1f1f1f",
+        "dark-accent": "#dd9933",
         "off-white": "#dddddd",
       },
     },
