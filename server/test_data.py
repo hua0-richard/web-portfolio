@@ -82,7 +82,7 @@ experience = [
 
 education = [
     {
-        "position" : "B.S.c Computer Science",
+        "position" : "BSc Computer Science",
         "organisation" : "University of Waterloo",
         "date" : "Apr 2025",
         "description" : "Coursework in Operating Systems, Compilers, Networking, User Interfaces, and Applicaiton Development"
