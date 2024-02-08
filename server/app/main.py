@@ -38,9 +38,13 @@ def user():
     experience_result = experience.find({})
     education_result = education.find({})
 
-
-
-    return json.loads(json_util.dumps({ "about" : about_result, "projects" : projects_result, "experience" : experience_result, "education" : education_result}))
+    return json.loads(json_util.dumps(
+        { 
+        "about" : about_result, 
+        "projects" : projects_result, 
+        "experience" : experience_result, 
+        "education" : education_result
+        }))
 
 
 
