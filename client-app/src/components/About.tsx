@@ -1,8 +1,15 @@
+import { useContext } from "react";
+import { UserContext } from "../UserContext";
 export default function About() {
+  const context = useContext(UserContext);
   return (
     <div className="w-[720px] flex flex-col justify-between items-start">
-      <h1 className="text-6xl font-bold dark:text-white">Hey, 👋</h1>
-      <div className="my-8 dark:text-off-white text-left">I'm a Software Developer with experience in Fullstack Development. I'm currently in my final year at the University of Waterloo.</div>
+      <h1 className="text-6xl font-bold dark:text-white">
+        {context.about[0].title}
+      </h1>
+      <div className="my-8 dark:text-off-white text-left">
+        {context.about[0].description}
+      </div>
     </div>
   );
 }

@@ -23,22 +23,18 @@ app.add_middleware(
 
 @app.get("/")
 def index():
+    print("test")
     return {"title":"hello"}
 
 @app.get("/user")
 def user():
-    info = db["info"]
-    result = info.find_one()
-    print(result)
-    return json.loads(json_util.dumps(result))
+    about = db["about"]
+    projects = db["projects"]
+    
+    about_result = about.find({})
+    projects_result = projects.find({})
 
-@app.get("user/education")
-def user_education():
-    return
-
-@app.get("user/about")
-def user_about():
-    return
+    return json.loads(json_util.dumps({ "about" : about_result, "projects" : projects_result}))
 
 
 

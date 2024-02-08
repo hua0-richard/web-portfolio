@@ -9,7 +9,9 @@ export default function CardLarge() {
             </div>
             <div className="dark:text-off-white text-lg">Org</div>
           </div>
-          <div className="text-violet-700 dark:text-yellow-400 font-mono text-sm">Date</div>
+          <div className="text-violet-700 dark:text-yellow-400 font-mono text-sm">
+            Date
+          </div>
         </div>
         <div className="dark:text-off-white text-sm">Desc.</div>
       </div>
