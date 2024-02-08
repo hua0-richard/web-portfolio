@@ -31,13 +31,16 @@ def user():
     about = db["about"]
     projects = db["projects"]
     experience = db["experience"]
+    education = db["education"]
     
     about_result = about.find({})
     projects_result = projects.find({})
     experience_result = experience.find({})
+    education_result = education.find({})
 
 
-    return json.loads(json_util.dumps({ "about" : about_result, "projects" : projects_result, "experience" : experience_result}))
+
+    return json.loads(json_util.dumps({ "about" : about_result, "projects" : projects_result, "experience" : experience_result, "education" : education_result}))
 
 
 

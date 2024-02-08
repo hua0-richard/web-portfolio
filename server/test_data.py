@@ -68,9 +68,24 @@ experience = [
     },
     {
         "position" : "Software Developer Intern",
+        "organisation" : "Marsh McLennan",
+        "date" : " Jan - Apr 2022",
+        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+    },
+    {
+        "position" : "Software Developer Intern",
         "organisation" : "Huawei Technologies",
         "date" : "Aug - Sep 2021",
         "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+    }
+]
+
+education = [
+    {
+        "position" : "B.S.c Computer Science",
+        "organisation" : "University of Waterloo",
+        "date" : "Apr 2025",
+        "description" : "Coursework in Operating Systems, Compilers, Networking, User Interfaces, and Applicaiton Development"
     }
 ]
 
@@ -80,5 +95,7 @@ for p in projects:
     projectsCollection.insert_one(p)
 for e in experience:
     experienceCollection.insert_one(e)
+for ed in education: 
+    educationCollection.insert_one(ed)
 
 print("done!")
