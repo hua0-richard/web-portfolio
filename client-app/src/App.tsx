@@ -13,7 +13,7 @@ function App() {
   const [load, setLoad] = useState(false);
 
   useEffect(() => {
-    fetch("http://localhost:8000/user")
+    fetch(`${import.meta.env.VITE_SERVER}user`)
       .then((res) => {
         return res.json();
       })
