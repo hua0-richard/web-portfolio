@@ -30,11 +30,14 @@ def index():
 def user():
     about = db["about"]
     projects = db["projects"]
+    experience = db["experience"]
     
     about_result = about.find({})
     projects_result = projects.find({})
+    experience_result = experience.find({})
 
-    return json.loads(json_util.dumps({ "about" : about_result, "projects" : projects_result}))
+
+    return json.loads(json_util.dumps({ "about" : about_result, "projects" : projects_result, "experience" : experience_result}))
 
 
 

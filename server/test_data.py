@@ -53,11 +53,32 @@ projects = [
     },
 ]
 
+experience = [
+    {
+        "position" : "Software Developer Intern",
+        "organisation" : "Automated Tooling Systems",
+        "date" : "May - Aug 2023",
+        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+    },
+    {
+        "position" : "Software Developer Intern",
+        "organisation" : "Marsh McLennan",
+        "date" : " Aug - Dec 2022",
+        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+    },
+    {
+        "position" : "Software Developer Intern",
+        "organisation" : "Huawei Technologies",
+        "date" : "Aug - Sep 2021",
+        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+    }
+]
+
 for a in about:
     aboutCollection.insert_one(a)
 for p in projects:
     projectsCollection.insert_one(p)
-
-
+for e in experience:
+    experienceCollection.insert_one(e)
 
 print("done!")
