@@ -5,11 +5,11 @@ export default function CardLarge() {
         <div className="w-full flex justify-between">
           <div className="flex">
             <div className="dark:text-off-white font-bold text-lg">
-              Position,{" "}
+              Position,
             </div>
             <div className="dark:text-off-white text-lg">Org</div>
           </div>
-          <div className="dark:text-yellow-400 font-mono text-sm">Date</div>
+          <div className="text-violet-700 dark:text-yellow-400 font-mono text-sm">Date</div>
         </div>
         <div className="dark:text-off-white text-sm">Desc.</div>
       </div>
