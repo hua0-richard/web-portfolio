@@ -1,6 +1,10 @@
+import { useContext } from "react";
+import { UserContext } from "../UserContext";
 import ButtonRectangle from "./ButtonRectangle";
 import Card from "./Card";
 export default function Projects() {
+  const context= useContext(UserContext);
+  
   return (
     <div className="w-[720px] flex flex-col justify-start items-start">
       <div className="w-full flex justify-between items-center">
