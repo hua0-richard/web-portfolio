@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { UserContext } from "../UserContext";
-import CardLarge from "./CardLarge";
+import Section from "./Section";
 export default function Education() {
   const context = useContext(UserContext);
 
@@ -9,11 +9,16 @@ export default function Education() {
       <div className="w-full flex justify-between items-center mb-[12px]">
         <div className="dark:text-white text-4xl font-semibold">Education</div>
       </div>
-      {context.education.map((ed) =>       
-      <div className="w-full flex">
-        <CardLarge position={ed.position} org={ed.organisation} date={ed.date} description={ed.description}/>
-      </div>
-      )}
+      {context.education.map((ed) => (
+        <div className="w-full flex">
+          <Section
+            position={ed.position}
+            org={ed.organisation}
+            date={ed.date}
+            description={ed.description}
+          />
+        </div>
+      ))}
     </div>
   );
 }

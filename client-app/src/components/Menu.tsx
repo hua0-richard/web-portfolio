@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import ButtonRectangle from "./ButtonRectangle";
 import ButtonRound from "./ButtonRound";
+import { Link } from "react-router-dom";
 
 export default function Menu() {
   const [darkMode, setDarkMode] = useState(localStorage.theme);
@@ -30,8 +31,12 @@ export default function Menu() {
   return (
     <div className="w-[720px] py-[24px] flex justify-between items-center">
       <div className="flex justify-around space-x-2">
-        <ButtonRectangle icon="😀" label="About" />
-        <ButtonRectangle icon="🔨" label="Projects" />
+        <Link to="/">
+          <ButtonRectangle icon="😀" label="About" />
+        </Link>
+        <Link to="/projects">
+          <ButtonRectangle icon="🔨" label="Projects" />
+        </Link>
         <ButtonRectangle icon="🧑‍💻" label="Github" />
       </div>
 
