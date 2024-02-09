@@ -40,9 +40,9 @@ def user():
     return json.loads(json_util.dumps(
         { 
         "about" : about_result, 
-        # "projects" : projects_result, 
-        # "experience" : experience_result, 
-        # "education" : education_result
+        "projects" : projects_result, 
+        "experience" : experience_result, 
+        "education" : education_result
         }))
 
 
