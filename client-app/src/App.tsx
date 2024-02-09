@@ -10,7 +10,6 @@ function App() {
 
   return (
     <div className="min-h-full bg-white dark:bg-dark-base absolute top-0 start-0 w-screen h-screen flex flex-col justify-start items-center overflow-auto">
-      <Menu />
       <Routes>
         <Route path="/" element={<AboutPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
