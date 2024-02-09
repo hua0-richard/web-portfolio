@@ -13,11 +13,9 @@ export default function Projects() {
       </div>
 
       <div className="my-[24px] w-full space-y-4">
-        // @ts-ignore
         {context.projects.map((a, i) =>
           i % 3 === 0 ? (
             <div className="flex justify-around w-full space-x-4">
-              // @ts-ignore
               {context.projects.map((b, j) =>
                 j >= i && i + 3 > j ? (
                   <Card

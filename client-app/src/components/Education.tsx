@@ -9,8 +9,7 @@ export default function Education() {
       <div className="w-full flex justify-between items-center mb-[12px]">
         <div className="dark:text-white text-4xl font-semibold">Education</div>
       </div>
-      // @ts-ignore
-      {context.education.map((ed, index) =>       
+      {context.education.map((ed) =>       
       <div className="w-full flex">
         <CardLarge position={ed.position} org={ed.organisation} date={ed.date} description={ed.description}/>
       </div>
