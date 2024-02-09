@@ -23,7 +23,7 @@ app.add_middleware(
 
 @app.get("/")
 def index():
-    return {}
+    return {"key" : "value"}
 
 @app.get("/user")
 def user():
