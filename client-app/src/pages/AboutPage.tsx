@@ -35,7 +35,7 @@ export default function AboutPage() {
           <Footer />
         </UserContext.Provider>
       ) : (
-        <LoadingScreen />
+        <></>
       )}
     </>
   );
