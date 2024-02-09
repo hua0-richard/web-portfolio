@@ -3,7 +3,7 @@ import Menu from "./Menu";
 
 export default function LoadingScreen() {
     const [show, setShow] = useState(false);
-    useEffect(() => {setTimeout(() => setShow(true), 500)}, [])
+    useEffect(() => {setTimeout(() => setShow(true), 50)}, [])
 
   return (
     <div className="h-full flex justify-center items-center">
