@@ -4,7 +4,7 @@ import json
 from fastapi.middleware.cors import CORSMiddleware
 from pymongo import MongoClient
 import os
-mongoString = os.environ['CONN_STR']
+mongoString = os.environ.get('CONN_STR')
 client = MongoClient(mongoString)
 db = client["user"]
 
