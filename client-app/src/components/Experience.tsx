@@ -10,6 +10,7 @@ export default function Experience() {
       <div className="w-full flex justify-between items-center mb-[12px]">
         <div className="dark:text-white text-4xl font-semibold">Experience</div>
       </div>
+      // @ts-ignore
       {context.experience.map((exp, index) => 
           <div className="w-full flex">
             <CardLarge position={exp.position} org={exp.organisation} date={exp.date} description={exp.description}/>
