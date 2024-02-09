@@ -2,8 +2,6 @@ import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import AboutPage from "./pages/AboutPage";
 import ProjectsPage from "./pages/ProjectsPage";
-import { user } from "@nextui-org/theme";
-import { UserContext } from "./UserContext";
 import { useEffect, useState } from "react";
 import Menu from "./components/Menu";
 
