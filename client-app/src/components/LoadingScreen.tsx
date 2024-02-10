@@ -8,9 +8,9 @@ export default function LoadingScreen() {
   }, []);
 
   return (
-    <div className="h-full flex justify-center items-center">
+    <div className="page h-full flex justify-center items-center">
       {show ? (
-        <div className="bg-gradient-to-r from-violet-700 to-blue-900 dark:bg-gradient-to-r dark:from-yellow-400 dark:to-orange-500 flex justify-center items-center animate-spin rounded-full h-[50px] w-[50px]">
+        <div className="bg-gradient-to-r from-10% from-white via-violet-700 to-blue-900 to-90% dark:bg-gradient-to-r dark:from-10% dark:from-dark-base dark:via-yellow-400 dark:to-orange-500 dark:to-90% flex justify-center items-center animate-spin rounded-full h-[50px] w-[50px]">
           <div className="bg-white rounded-full dark:bg-dark-base h-[42px] w-[42px]"></div>
         </div>
       ) : (
