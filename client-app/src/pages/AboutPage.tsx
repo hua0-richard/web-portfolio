@@ -27,7 +27,7 @@ export default function AboutPage() {
     <>
       {load ? (
         <UserContext.Provider value={user}>
-          <Menu/>
+          <Menu />
           <About />
           <Projects />
           <Experience />

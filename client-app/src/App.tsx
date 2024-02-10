@@ -6,7 +6,10 @@ import { useEffect, useState } from "react";
 import Menu from "./components/Menu";
 
 function App() {
-  useEffect(() => {}, []);
+  useEffect(() => {
+    localStorage.theme = "dark";
+    document.documentElement.classList.add("dark");
+  }, []);
 
   return (
     <div className="min-h-full bg-white dark:bg-dark-base absolute top-0 start-0 w-screen h-screen flex flex-col justify-start items-center overflow-auto">

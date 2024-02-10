@@ -7,11 +7,7 @@ export default function Menu() {
   const [darkMode, setDarkMode] = useState(localStorage.theme);
 
   useEffect(() => {
-    if (
-      localStorage.theme !== "dark") {
-      document.documentElement.classList.add("dark");
-      setDarkMode(localStorage.theme);
-    } 
+    setDarkMode(localStorage.theme);
   }, []);
 
   function handleDarkMode() {
@@ -38,7 +34,7 @@ export default function Menu() {
       </div>
 
       <div>
-        {darkMode === "dark" ? (
+        {darkMode !== "dark" ? (
           <ButtonRound icon="☀️" handleClick={handleDarkMode} />
         ) : (
           <ButtonRound icon="🌙" handleClick={handleDarkMode} />
