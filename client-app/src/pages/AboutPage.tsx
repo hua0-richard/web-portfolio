@@ -1,3 +1,4 @@
+import "../App.css"
 import { useEffect, useState } from "react";
 import { UserContext } from "../UserContext";
 import Menu from "../components/Menu";
@@ -28,13 +29,15 @@ export default function AboutPage() {
     <>
       {load ? (
         <UserContext.Provider value={user}>
-          <Menu />
-          <About />
-          <Projects />
-          <Experience />
-          <Education />
-          <Footer />
-        </UserContext.Provider>
+          <div className="page">
+              <Menu />
+              <About />
+              <Projects />
+              <Experience />
+              <Education />
+              <Footer />
+            </div>
+          </UserContext.Provider>
       ) : (
         <><LoadingScreen/></>
       )}
