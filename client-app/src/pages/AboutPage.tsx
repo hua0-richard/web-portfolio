@@ -6,6 +6,7 @@ import Projects from "../components/Projects";
 import Education from "../components/Education";
 import Experience from "../components/Experience";
 import Footer from "../components/Footer";
+import LoadingScreen from "../components/LoadingScreen";
 
 export default function AboutPage() {
   const [user, setUser] = useState();
@@ -35,7 +36,7 @@ export default function AboutPage() {
           <Footer />
         </UserContext.Provider>
       ) : (
-        <></>
+        <><LoadingScreen/></>
       )}
     </>
   );
