@@ -7,15 +7,20 @@ export default function Menu() {
   const [darkMode, setDarkMode] = useState(localStorage.theme);
 
   useEffect(() => {
-      localStorage.theme = "dark"
-      setDarkMode(localStorage.theme)
+    if (
+      localStorage.theme !== "dark") {
+      document.documentElement.classList.add("dark");
+      setDarkMode(localStorage.theme);
+    } 
   }, []);
 
   function handleDarkMode() {
     if (localStorage.theme === "dark") {
+      document.documentElement.classList.remove("dark");
       localStorage.theme = "light";
       setDarkMode(localStorage.theme);
     } else {
+      document.documentElement.classList.add("dark");
       localStorage.theme = "dark";
       setDarkMode(localStorage.theme);
     }
