@@ -59,5 +59,26 @@ def user():
         "education" : education_result
         }))
 
+@app.get("/user/about")
+def about():
+    return
+
+@app.put("/user/about")
+def editAbout():
+    return
+
+@app.get("/user/projects")
+def projects():
+    return
+
+@app.get("/user/experience")
+def projects():
+    return
+
+@app.get("/user/education")
+def education():
+    return
+
+
 
 
