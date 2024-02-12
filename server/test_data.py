@@ -33,7 +33,7 @@ projects = [
     },
     {
         "year" : "2024",
-        "title" : "Portfolio",
+        "title" : "Portfolio 2.0",
         "description" : "Portfolio site with React and FastAPI."
     },
     {
@@ -51,6 +51,11 @@ projects = [
         "title" : "CC3K",
         "description" : "Rouge dungeon crawler. Built with C++."
     },
+    {
+        "year" : "2020",
+        "title" : "Portfolio 1.0",
+        "description" : "Portfolio site with JS and HTML/CSS"
+    },
 ]
 
 experience = [
@@ -58,25 +63,25 @@ experience = [
         "position" : "Software Developer Intern",
         "organisation" : "Automated Tooling Systems",
         "date" : "May - Aug 2023",
-        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "description" : "SuperTrak Web Application, Angular/.NET",
     },
     {
         "position" : "Software Developer Intern",
         "organisation" : "Marsh McLennan",
         "date" : " Aug - Dec 2022",
-        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "description" : "Internal Tools, Angular/Node/MongoDB",
     },
     {
         "position" : "Software Developer Intern",
         "organisation" : "Marsh McLennan",
         "date" : " Jan - Apr 2022",
-        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "description" : "Internal Tools, Angular/Node/MongoDB",
     },
     {
-        "position" : "Software Developer Intern",
+        "position" : "Assistant Engineer Intern",
         "organisation" : "Huawei Technologies",
         "date" : "Aug - Sep 2021",
-        "description" : "Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum",
+        "description" : "QA & Automated Testing, Java/Bash",
     }
 ]
 

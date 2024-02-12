@@ -13,10 +13,10 @@ export default function Projects() {
       </div>
 
       <div className="my-[24px] w-full space-y-4">
-        {context.projects.map((_a, i) =>
+        {context.projects.slice(0,6).map((_a, i) =>
           i % 3 === 0 ? (
             <div className="flex justify-around w-full space-x-4">
-              {context.projects.map((b, j) =>
+              {context.projects.slice(0, 6).map((b, j) =>
                 j >= i && i + 3 > j ? (
                   <Card
                     year={b.year}
