@@ -1,7 +1,7 @@
 export default function Footer() {
   return (
     <div className="w-[720px] flex justify-center items-center">
-      <div className="h-[144px] flex flex-col justify-around">
+      <div className="h-[144px] flex flex-col justify-around text-center">
         <div className="text-3xl">💻</div>
         <div className="dark:text-off-white text-sm">Updated Feb 2024</div>
         <div className="flex flex-between space-x-4">
