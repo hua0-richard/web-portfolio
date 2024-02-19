@@ -69,7 +69,11 @@ def editAbout():
 
 @app.get("/user/projects")
 def projects():
-    return
+    projects = db["projects"]
+    projects_result = projects.find({})
+    return json.loads(json_util.dumps(
+        {"projects" : projects_result}
+    ))
 
 @app.get("/user/experience")
 def projects():
