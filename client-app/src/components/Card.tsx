@@ -3,13 +3,15 @@ export default function Card({
   year,
   title,
   description,
+  size='w-1/3'
 }: {
   year: string;
   title: string;
   description: string;
+  size: string
 }) {
   return (
-    <div className="w-1/3 h-[196px] p-[24px] flex flex-col justify-start items-start rounded-lg border-2 bg-light-tertiary dark:bg-dark-tertiary dark:border-dark-secondary">
+    <div className={`${size} h-[196px] p-[24px] flex flex-col justify-start items-start rounded-lg border-2 bg-light-tertiary dark:bg-dark-tertiary dark:border-dark-secondary`}>
       <div className="text-violet-700 dark:text-yellow-400 font-mono text-sm">
         {year}
       </div>

@@ -25,7 +25,7 @@ export default function ProjectsPage() {
         <div className="w-[720px] flex flex-col justify-start items-start">
           <div className="dark:text-white text-4xl font-semibold">Projects</div>
           <div className="w-full">
-            {projects.map((p, i) => (<Card year={p.year} title={p.title} description={p.description}/>))}
+            {projects.map((p, i) => (<Card year={p.year} title={p.title} description={p.description} size="w-1/2" />))}
           </div>
         </div>
     </div>
