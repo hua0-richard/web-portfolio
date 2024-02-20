@@ -31,7 +31,7 @@ export default function Menu() {
           <ButtonRectangle icon="🔨" label="Projects" />
         </Link>
         <a href="https://github.com/hua0-richard" target="_blank">
-          <ButtonRectangle icon="🧑‍💻" label="Github"/>
+          <ButtonRectangle icon="🧑‍💻" label="Github" />
         </a>
       </div>
 

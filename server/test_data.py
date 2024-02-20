@@ -35,7 +35,9 @@ projects = [
         "description": "Live Chat with React and SocketIO.",
         "descriptionExtended": "",
         "tech": [],
-        "tags": []
+        "tags": [],
+        "source": "",
+        "demo": ""
     },
     {
         "year": "2024",
@@ -43,7 +45,9 @@ projects = [
         "description": "Portfolio site with React and FastAPI.",
         "descriptionExtended": "",
         "tech": [],
-        "tags": []
+        "tags": [],
+        "source": "",
+        "demo": ""
 
     },
     {
@@ -52,7 +56,9 @@ projects = [
         "description": "Notes app with Kotlin and Javafx.",
         "descriptionExtended": "",
         "tech": [],
-        "tags": []
+        "tags": [],
+        "source": "",
+        "demo": ""
 
     },
     {
@@ -61,7 +67,9 @@ projects = [
         "description": "WLP4 (subset of C) compilier with C++.",
         "descriptionExtended": "",
         "tech": [],
-        "tags": []
+        "tags": [],
+        "source": "",
+        "demo": ""
     },
     {
         "year": "2021",
@@ -69,7 +77,9 @@ projects = [
         "description": "Rouge dungeon crawler. Built with C++.",
         "descriptionExtended": "",
         "tech": [],
-        "tags": []
+        "tags": [],
+        "source": "",
+        "demo": ""
 
     },
     {
@@ -78,7 +88,9 @@ projects = [
         "description": "Portfolio site with JS and HTML/CSS",
         "descriptionExtended": "",
         "tech": [],
-        "tags": []
+        "tags": [],
+        "source": "",
+        "demo": ""
     },
 ]
 
