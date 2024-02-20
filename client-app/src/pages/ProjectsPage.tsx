@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Menu from "../components/Menu";
 import LoadingScreen from "../components/LoadingScreen";
 import Card from "../components/Card"
+import ButtonRectangle from "../components/ButtonRectangle";
 export default function ProjectsPage() {
   const [load, setLoad] = useState(false);
   const [projects, setProjects] = useState([])
@@ -22,11 +23,14 @@ export default function ProjectsPage() {
     {load ? (
       <div className="page">
         <Menu />
-        <div className="w-[720px] flex flex-col justify-start items-start">
-          <div className="dark:text-white text-4xl font-semibold">Projects</div>
-          <div className="w-full">
-            {projects.map((p, i) => (<Card year={p.year} title={p.title} description={p.description} size="w-1/2" />))}
-          </div>
+        <div className="w-full flex justify-between items-center">
+        <div className="dark:text-white text-4xl font-semibold">Projects</div>
+        <div className="flex space-x-2">
+          <ButtonRectangle icon="🪄" label="Filter" />
+          <ButtonRectangle icon="🔼" label="Date" />
+        </div>
+      </div>        <div className="w-[720px] flex justify-between items-end flex-wrap space-y-4">
+            {projects.map((p, i) => (<Card year={p.year} title={p.title} description={p.description} size="w-[352px]"/>))}
         </div>
     </div>
     ) : (<LoadingScreen/>) }
