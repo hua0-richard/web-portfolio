@@ -26,8 +26,9 @@ export default function ProjectsPage() {
         <div className="w-full flex justify-between items-center">
         <div className="dark:text-white text-4xl font-semibold">Projects</div>
         <div className="flex space-x-2">
-          <ButtonRectangle icon="🪄" label="Filter" />
-          <ButtonRectangle icon="🔼" label="Date" />
+          <ButtonRectangle icon="🔮" label="Filter" />
+          <ButtonRectangle icon="📆" label="Newest" />
+          <ButtonRectangle icon="📆" label="Oldest" />
         </div>
       </div>        <div className="w-[720px] flex justify-between items-end flex-wrap space-y-4">
             {projects.map((p, i) => (<Card year={p.year} title={p.title} description={p.description} size="w-[352px]"/>))}
