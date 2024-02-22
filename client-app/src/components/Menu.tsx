@@ -30,6 +30,9 @@ export default function Menu() {
         <Link to="/projects">
           <ButtonRectangle icon="🔨" label="Projects" />
         </Link>
+        <Link to="/">
+          <ButtonRectangle icon="📒" label="Blog"></ButtonRectangle>
+        </Link>
         <a href="https://github.com/hua0-richard" target="_blank">
           <ButtonRectangle icon="🧑‍💻" label="Github" />
         </a>
