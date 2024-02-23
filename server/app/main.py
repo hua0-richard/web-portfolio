@@ -45,23 +45,27 @@ def user():
     projects = db["projects"]
     experience = db["experience"]
     education = db["education"]
-    
+
     about_result = about.find({})
     projects_result = projects.find({})
     experience_result = experience.find({})
     education_result = education.find({})
 
     return json.loads(json_util.dumps(
-        { 
-        "about" : about_result, 
-        "projects" : projects_result, 
-        "experience" : experience_result, 
+        {
+        "about" : about_result,
+        "projects" : projects_result,
+        "experience" : experience_result,
         "education" : education_result
         }))
 
 @app.get("/user/about")
 def about():
-    return
+    about = db["about"]
+    about_result = about.find({})
+    return json.loads(json_util.dumps({
+        "about" : about_result
+    }))
 
 @app.put("/user/about")
 def editAbout():
@@ -82,7 +86,3 @@ def projects():
 @app.get("/user/education")
 def education():
     return
-
-
-
-
