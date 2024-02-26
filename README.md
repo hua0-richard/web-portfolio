@@ -7,6 +7,11 @@ Portfolio site listing projects I have completed or am currently working on, and
 ### Installation and Quick Start
 
 ### Tech Stack
+Vite
+React TypeScript
+FastAPI Python
+MongoDB
+Docker
 
 ### TODOs 
 
