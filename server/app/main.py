@@ -8,11 +8,13 @@ import threading
 import time
 import requests
 
+
 def pingServer():
     while True:
         print("ping")
         requests.get("https://web-portfolio-server-hua0-richard.vercel.app/")
         time.sleep(300)
+
 
 background_thread = threading.Thread(target=pingServer)
 background_thread.daemon = True
@@ -35,9 +37,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+
 @app.get("/")
 def index():
-    return {"key" : "value"}
+    return {"key": "value"}
+
 
 @app.get("/user")
 def user():
@@ -53,35 +57,44 @@ def user():
 
     return json.loads(json_util.dumps(
         {
-        "about" : about_result,
-        "projects" : projects_result,
-        "experience" : experience_result,
-        "education" : education_result
+            "about": about_result,
+            "projects": projects_result,
+            "experience": experience_result,
+            "education": education_result
         }))
+
 
 @app.get("/user/about")
 def about():
     about = db["about"]
     about_result = about.find({})
     return json.loads(json_util.dumps({
-        "about" : about_result
+        "about": about_result
     }))
+
 
 @app.put("/user/about")
 def editAbout():
     return
+
 
 @app.get("/user/projects")
 def projects():
     projects = db["projects"]
     projects_result = projects.find({})
     return json.loads(json_util.dumps(
-        {"projects" : projects_result}
+        {"projects": projects_result}
     ))
+
 
 @app.get("/user/experience")
 def projects():
-    return
+    experience = db["experience"]
+    experience_result = experience.find({})
+    return json.loads(json_util.dumps({
+        "experience": experience_result
+    }))
+
 
 @app.get("/user/education")
 def education():
