@@ -1,4 +1,5 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Depends
+from fastapi.security import OAuth2PasswordBearer
 from bson import json_util
 import json
 from fastapi.middleware.cors import CORSMiddleware
