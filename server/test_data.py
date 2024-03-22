@@ -3,6 +3,10 @@ import os
 mongoString = os.environ.get('CONN_STR')
 client = MongoClient(mongoString)
 
+print("start")
+print(client)
+print(mongoString)
+
 # clear database
 toDrop = client['user']
 client.drop_database(toDrop)
@@ -131,7 +135,10 @@ education = [
 ]
 
 for a in about:
-    aboutCollection.insert_one(a)
+    try:
+        aboutCollection.insert_one(a)
+    except:
+        print("err")
 for p in projects:
     projectsCollection.insert_one(p)
 for e in experience:
